@@ -1,0 +1,29 @@
+{
+    "name": "logsman",
+    "version": "1.0.0",
+    "description": "Logging service for servers written",
+    "main": "src/index.js",
+    "scripts": {
+        "lint": "eslint src/**/*.ts",
+        "develop": "nodemon --watch src src/index.js",
+        "test": "istanbul cover ./node_modules/mocha/bin/_mocha -- **/*.spec.js"
+    },
+    "dependencies": {
+        "convict": "^4.0.2",
+        "event-stream": "^3.3.4",
+        "tail-stream": "^0.3.4",
+        "zeromq": "^4.6.0"
+    },
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "concurrently": "^3.5.1",
+        "istanbul": "^0.4.5",
+        "mocha": "^5.0.1",
+        "nodemon": "^1.15.1",
+        "rimraf": "^2.6.2"
+    },
+    "repository": {},
+    "author": "Pittr",
+    "license": "MIT",
+    "keywords": []
+}
